@@ -1,0 +1,15 @@
+.node {
+    fill: white;
+    stroke: steelblue;
+}
+
+.node-invisible {
+    fill: red;
+    stroke: steelblue;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
