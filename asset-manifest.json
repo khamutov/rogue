@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rogue/static/css/main.88d4c37d.chunk.css",
+    "main.js": "/rogue/static/js/main.63160aa3.chunk.js",
+    "main.js.map": "/rogue/static/js/main.63160aa3.chunk.js.map",
+    "runtime-main.js": "/rogue/static/js/runtime-main.ee242616.js",
+    "runtime-main.js.map": "/rogue/static/js/runtime-main.ee242616.js.map",
+    "static/js/2.f486dcad.chunk.js": "/rogue/static/js/2.f486dcad.chunk.js",
+    "static/js/2.f486dcad.chunk.js.map": "/rogue/static/js/2.f486dcad.chunk.js.map",
+    "static/js/3.6416f78d.chunk.js": "/rogue/static/js/3.6416f78d.chunk.js",
+    "static/js/3.6416f78d.chunk.js.map": "/rogue/static/js/3.6416f78d.chunk.js.map",
+    "index.html": "/rogue/index.html",
+    "static/css/main.88d4c37d.chunk.css.map": "/rogue/static/css/main.88d4c37d.chunk.css.map",
+    "static/js/2.f486dcad.chunk.js.LICENSE.txt": "/rogue/static/js/2.f486dcad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee242616.js",
+    "static/js/2.f486dcad.chunk.js",
+    "static/css/main.88d4c37d.chunk.css",
+    "static/js/main.63160aa3.chunk.js"
+  ]
+}
