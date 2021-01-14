@@ -99,7 +99,7 @@ function buildTree(tree, idx, nodes_array) {
   const left_idx = idx * 2 + 1;
 
   if (left_idx < nodes_array.length) {
-    var subtree = {};
+    let subtree = {};
     subtree.name = nodes_array[left_idx];
     if (subtree.name !== "null") {
       buildTree(subtree, left_idx, nodes_array);
@@ -112,7 +112,7 @@ function buildTree(tree, idx, nodes_array) {
 
   const right_idx = idx * 2 + 2;
   if (right_idx < nodes_array.length) {
-    var subtree = {};
+    let subtree = {};
     subtree.name = nodes_array[right_idx];
     if (subtree.name !== "null") {
       buildTree(subtree, right_idx, nodes_array);
@@ -147,18 +147,14 @@ export function TreeParserPage() {
   const [d3node, setD3node] = useState('');
   const [treeStr, setTreeStr] = useState('1,2,3,4,5,null,7,8,9,0,11,12,13,14,15');
 
-  const initial_tree = parseStr(treeStr);
-
   useEffect(() => {
+    const initial_tree = parseStr(treeStr);
+
     setD3node(gen_data(initial_tree));
-  }, []);
+  }, [treeStr]);
 
   function handleTreeChange(e) {
-    const treeData = parseStr(e.target.value);
     setTreeStr(e.target.value);
-    // setTreeStr(JSON.stringify(treeData));
-
-    setD3node(gen_data(treeData));
   }
 
   return (
