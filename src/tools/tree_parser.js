@@ -1,9 +1,13 @@
 import rd3 from 'react-d3-library';
 
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { stackoverflowLight as codestyle } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 import * as d3 from "d3";
 import {useEffect, useState} from "react";
 
 import './tree_parser.css';
+import {cpp_from_str, cpp_to_str, cpp_tree_definition} from "./tree_parser_snippets";
 
 const RD3Component = rd3.Component;
 
@@ -167,6 +171,23 @@ export function TreeParserPage() {
       </div>
       <div>
         <RD3Component data={d3node} />
+      </div>
+      <h2>Code snippets</h2>
+      <div className="codeblock">
+        <h3>Tree definition</h3>
+        <SyntaxHighlighter language="cpp" style={codestyle}>
+          {cpp_tree_definition}
+        </SyntaxHighlighter>
+
+        <h3>Parse string to tree</h3>
+        <SyntaxHighlighter language="cpp" style={codestyle}>
+          {cpp_from_str}
+        </SyntaxHighlighter>
+
+        <h3>Tree to string</h3>
+        <SyntaxHighlighter language="cpp" style={codestyle}>
+          {cpp_to_str}
+        </SyntaxHighlighter>
       </div>
     </div>
 
